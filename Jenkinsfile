@@ -1,10 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('Prebuild') {
+    stage('stages') {
       steps {
         sh '''cd scripts
-./installer.sh'''
+/etc/sudoers
+./deploy.sh'''
       }
     }
 
